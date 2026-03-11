@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Priority crawl paths
+Allow: /apa-citation-generator.html
+Allow: /mla-citation-generator.html
+Allow: /chicago-citation-generator.html
+Allow: /ieee-citation-generator.html
+Allow: /harvard-citation-generator.html
+Allow: /legal-brief-irac-generator.html
+Allow: /thesis-statement-builder.html
+Allow: /literature-review-generator.html
+Allow: /dissertation-chapter-planner.html
+Allow: /blog.html
+Allow: /hub-citation-guide.html
+Allow: /hub-legal-research.html
+Allow: /hub-phd-research.html
+Allow: /compare-apa-vs-mla.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /privacy.html
+
+Sitemap: https://proscholartools.com/sitemap.xml
+
+# Crawl-delay for respectful bots
+Crawl-delay: 1

@@ -1,0 +1,29 @@
+# ═══ Clean URL Redirects ═══
+/apa-citation-generator         /apa-citation-generator.html    200
+/mla-citation-generator         /mla-citation-generator.html    200
+/chicago-citation-generator     /chicago-citation-generator.html 200
+/ieee-citation-generator        /ieee-citation-generator.html   200
+/harvard-citation-generator     /harvard-citation-generator.html 200
+/legal-brief-irac               /legal-brief-irac-generator.html 200
+/irac-generator                 /legal-brief-irac-generator.html 200
+/thesis-builder                 /thesis-statement-builder.html  200
+/literature-review              /literature-review-generator.html 200
+/dissertation-planner           /dissertation-chapter-planner.html 200
+/blog                           /blog.html                      200
+
+# ═══ Comparison pages ═══
+/apa-vs-mla                     /compare-apa-vs-mla.html        200
+/best-citation-generator        /compare-best-citation-tools.html 200
+/citation-machine-alternative   /compare-citation-machine-alternative.html 200
+/irac-vs-firac                  /compare-irac-vs-firac.html     200
+
+# ═══ Hub pages ═══
+/citation-guide                 /hub-citation-guide.html        200
+/legal-research-hub             /hub-legal-research.html        200
+/phd-research-hub               /hub-phd-research.html         200
+
+# ═══ Short aliases ═══
+/apa                            /apa-citation-generator.html    301
+/mla                            /mla-citation-generator.html    301
+/irac                           /legal-brief-irac-generator.html 301
+/tools                          /#tools                         301

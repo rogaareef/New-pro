@@ -212,7 +212,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://fonts.googleapis.com https://gumroad.com https://assets.gumroad.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://assets.gumroad.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://generativelanguage.googleapis.com https://proscholarstools.com https://pagead2.googlesyndication.com https://gumroad.com https://api.gumroad.com; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://gumroad.com https://player.vimeo.com https://vimeo.com;"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://fonts.googleapis.com https://gumroad.com https://assets.gumroad.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://assets.gumroad.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://generativelanguage.googleapis.com https://proscholartools.com https://pagead2.googlesyndication.com https://gumroad.com https://api.gumroad.com https://vitals.vercel-insights.com; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://gumroad.com https://player.vimeo.com https://vimeo.com;"
         }
       ]
     }

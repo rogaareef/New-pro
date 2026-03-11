@@ -1,0 +1,13 @@
+{
+  "name": "proscholartools",
+  "version": "1.0.0",
+  "description": "ProScholarsTools \u2014 AI Academic & Legal Research Tools",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

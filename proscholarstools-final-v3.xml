@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultmessages='false' lang='ar' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/static/icons/1.0/google-static-icons.html' xmlns:expr='http://www.google.com/static/icons/1.0/google-static-icons.html'>
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ProScholarTools | برو سكولار تولز - أدوات الذكاء الاصطناعي للبحث العلمي</title>
+
+    <!-- ═══ SEO Meta ═══ -->
+    <meta name="description" content="ProScholarTools — منصة أدوات ذكاء اصطناعي مجانية: مولد توثيق APA/MLA/Chicago، تلخيص قانوني، فحص سيو، استخراج نص من صور OCR، حاسبة قروض ذكية. Free AI academic tools for students and researchers."/>
+    <meta name="keywords" content="APA citation generator, MLA citation generator, free SEO audit tool, AI legal summarizer, OCR image to text Arabic, loan calculator, أداة توثيق APA, مولد مراجع أكاديمية, تلخيص عقود ذكاء اصطناعي, ProScholarTools"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="ProScholarTools"/>
+
+    <!-- ═══ Open Graph ═══ -->
+    <meta property="og:title" content="ProScholarTools — Free AI Academic Tools"/>
+    <meta property="og:description" content="Citation Generator, Legal Summarizer, SEO Audit, OCR, Loan Calculator — all powered by AI."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.proscholarstools.com/"/>
+    <meta property="og:locale" content="ar_AR"/>
+    <meta property="og:locale:alternate" content="en_US"/>
+
+    <!-- ═══ Twitter Card ═══ -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="ProScholarTools — Free AI Academic Tools"/>
+    <meta name="twitter:description" content="APA/MLA Citation Generator, Legal Summarizer, SEO Audit, OCR, Loan Calculator powered by AI."/>
+
+    <!-- ═══ Canonical + hreflang ═══ -->
+    <link rel="canonical" href="https://www.proscholarstools.com/"/>
+    <link rel="alternate" hreflang="ar" href="https://www.proscholarstools.com/"/>
+    <link rel="alternate" hreflang="en" href="https://www.proscholarstools.com/"/>
+    <link rel="alternate" hreflang="x-default" href="https://www.proscholarstools.com/"/>
+
+    <!-- ═══ AdSense ═══ -->
+    <script async="async" crossorigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6119422909390809"/>
+
+    <!-- ═══ Fonts ═══ -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Tajawal:wght@300;400;700&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+
+    <!-- ═══ Schema.org JSON-LD ═══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ProScholarTools",
+      "url": "https://www.proscholarstools.com/",
+      "description": "Free AI-powered academic tools: APA MLA Citation Generator, Legal Document Summarizer, SEO Audit, OCR Image to Text, Loan Calculator",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web Browser",
+      "inLanguage": ["ar", "en"],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Organization", "name": "ProScholarTools", "url": "https://www.proscholarstools.com/" }
+    }
+    </script>
+
+    <b:skin><![CDATA[
+    :root {
+        --navy:   #0b0f1e;
+        --navy2:  #111827;
+        --card:   #141928;
+        --border: rgba(255,215,80,0.15);
+        --gold:   #ffd750;
+        --gold2:  #e6b800;
+        --text:   #e8ecf4;
+        --muted:  #8892a4;
+        --success:#34d399;
+        --error:  #f87171;
+        --radius: 16px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Tajawal', sans-serif;
+        background: var(--navy);
+        color: var(--text);
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    body.en { direction: ltr; font-family: 'DM Sans', sans-serif; }
+    body.ar { direction: rtl; font-family: 'Tajawal', sans-serif; }
+    body.en .ar-v { display: none !important; }
+    body.ar .en-v { display: none !important; }
+
+    body::before {
+        content: '';
+        position: fixed; inset: 0; z-index: 0;
+        background-image:
+            linear-gradient(rgba(255,215,80,.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,215,80,.03) 1px, transparent 1px);
+        background-size: 44px 44px;
+        pointer-events: none;
+    }
+    body::after {
+        content: '';
+        position: fixed; top: -200px; right: -200px;
+        width: 600px; height: 600px; z-index: 0;
+        background: radial-gradient(circle, rgba(255,215,80,.06) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    header {
+        position: sticky; top: 0; z-index: 100;
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 0 5%; height: 68px;
+        background: rgba(11,15,30,.88);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--border);
+    }
+    .logo {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px; font-weight: 700;
+        color: var(--gold); text-decoration: none; letter-spacing: .5px;
+    }
+    .logo span { color: var(--text); font-weight: 600; }
+    .btn-lang {
+        background: transparent;
+        border: 1px solid var(--border);
+        color: var(--gold);
+        padding: 7px 20px; border-radius: 30px;
+        cursor: pointer; font-size: 13px; font-weight: 600;
+        transition: background .25s, border-color .25s;
+        font-family: inherit;
+    }
+    .btn-lang:hover { background: rgba(255,215,80,.1); border-color: var(--gold); }
+
+    .hero {
+        position: relative; z-index: 1;
+        text-align: center; padding: 70px 20px 50px;
+    }
+    .hero-badge {
+        display: inline-block;
+        background: rgba(255,215,80,.1);
+        border: 1px solid rgba(255,215,80,.3);
+        color: var(--gold);
+        font-size: 12px; font-weight: 600; letter-spacing: 1.2px;
+        text-transform: uppercase;
+        padding: 6px 18px; border-radius: 30px;
+        margin-bottom: 24px;
+        animation: fadeDown .6s ease both;
+    }
+    .hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(30px, 5vw, 54px);
+        line-height: 1.15; color: var(--text);
+        margin-bottom: 16px;
+        animation: fadeDown .7s .1s ease both;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero p {
+        color: var(--muted); font-size: 17px; max-width: 600px;
+        margin: 0 auto;
+        animation: fadeDown .7s .2s ease both;
+    }
+
+    .ad-banner {
+        position: relative; z-index: 1;
+        max-width: 980px; margin: 0 auto 24px;
+        padding: 0 20px; text-align: center;
+    }
+    .container {
+        position: relative; z-index: 1;
+        max-width: 980px; margin: 0 auto; padding: 0 20px 80px;
+    }
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+        gap: 24px;
+    }
+    @media(max-width:500px){ .tools-grid { grid-template-columns: 1fr; } }
+
+    .tool-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 28px;
+        position: relative; overflow: hidden;
+        transition: transform .25s, box-shadow .25s, border-color .25s;
+        animation: fadeUp .5s ease both;
+    }
+    .tool-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 50px rgba(0,0,0,.4), 0 0 0 1px rgba(255,215,80,.2);
+        border-color: rgba(255,215,80,.35);
+    }
+    .tool-card::before {
+        content: '';
+        position: absolute; top: 0; left: 0; right: 0; height: 2px;
+        background: linear-gradient(90deg, var(--gold2), var(--gold), transparent);
+        opacity: 0; transition: opacity .3s;
+    }
+    .tool-card:hover::before { opacity: 1; }
+    .card-icon {
+        width: 46px; height: 46px; border-radius: 12px;
+        background: rgba(255,215,80,.08);
+        border: 1px solid rgba(255,215,80,.2);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 22px; margin-bottom: 16px;
+    }
+    .tool-card h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px; color: var(--text);
+        margin-bottom: 18px; line-height: 1.3;
+        border: none; display: block;
+    }
+    .tool-card h2 span { color: var(--gold); }
+    input[type="text"], input[type="url"], input[type="number"], select, textarea {
+        width: 100%;
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(255,255,255,.1);
+        color: var(--text);
+        padding: 12px 16px; margin: 8px 0;
+        border-radius: 10px; font-size: 14px;
+        transition: border-color .2s, background .2s;
+        outline: none; font-family: inherit;
+    }
+    input::placeholder, textarea::placeholder { color: var(--muted); }
+    input:focus, select:focus, textarea:focus {
+        border-color: rgba(255,215,80,.5);
+        background: rgba(255,255,255,.07);
+    }
+    select option { background: var(--navy2); color: var(--text); }
+    textarea { resize: vertical; min-height: 100px; }
+    .main-btn {
+        width: 100%; margin-top: 14px;
+        padding: 13px;
+        background: linear-gradient(135deg, var(--gold2), var(--gold));
+        color: var(--navy);
+        border: none; border-radius: 10px;
+        font-weight: 700; font-size: 15px;
+        cursor: pointer;
+        transition: opacity .2s, transform .2s;
+        font-family: inherit;
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .main-btn:hover { opacity: .9; transform: translateY(-1px); }
+    .main-btn:active { transform: scale(.98); }
+    .main-btn.loading { opacity: .6; pointer-events: none; cursor: wait; }
+    .spinner {
+        width: 16px; height: 16px;
+        border: 2px solid rgba(11,15,30,.3);
+        border-top-color: var(--navy);
+        border-radius: 50%;
+        animation: spin .7s linear infinite;
+        display: none;
+    }
+    .main-btn.loading .spinner { display: block; }
+    .result-area {
+        display: none; margin-top: 16px;
+        padding: 18px;
+        background: rgba(255,215,80,.05);
+        border: 1px solid rgba(255,215,80,.2);
+        border-radius: 10px;
+        font-size: 14px; line-height: 1.9; color: var(--text);
+        white-space: pre-wrap;
+        animation: fadeUp .3s ease;
+    }
+    .result-area.error {
+        background: rgba(248,113,113,.05);
+        border-color: rgba(248,113,113,.3);
+        color: var(--error);
+    }
+    .seo-text {
+        margin-top: 14px;
+        font-size: 12.5px; color: var(--muted); line-height: 1.7;
+        border-top: 1px solid rgba(255,255,255,.05); padding-top: 14px;
+    }
+    footer {
+        position: relative; z-index: 1;
+        text-align: center; padding: 30px 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted); font-size: 13px;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    @keyframes fadeDown {
+        from { opacity: 0; transform: translateY(-16px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .tool-card:nth-child(1){ animation-delay:.05s }
+    .tool-card:nth-child(2){ animation-delay:.12s }
+    .tool-card:nth-child(3){ animation-delay:.19s }
+    .tool-card:nth-child(4){ animation-delay:.26s }
+    .tool-card:nth-child(5){ animation-delay:.33s }
+    ]]></b:skin>
+</head>
+
+<body class='ar' id='mainBody'>
+
+<header>
+    <a class='logo' href='/'>ProScholar<span>Tools</span></a>
+    <button class='btn-lang' onclick='toggleLang()'>English / عربي</button>
+</header>
+
+<section class='hero'>
+    <div class='hero-badge'>
+        <span class='ar-v'>مدعوم بـ Gemini AI — مجاني تماماً</span>
+        <span class='en-v'>Powered by Gemini AI — 100% Free</span>
+    </div>
+    <h1 class='ar-v'>أدواتك الذكية <em>للبحث العلمي</em></h1>
+    <h1 class='en-v'>Your <em>AI Toolkit</em> for Scholars</h1>
+    <p class='ar-v'>منصة شاملة لأدوات التوثيق الأكاديمي، التحليل القانوني، فحص السيو، واستخراج النصوص — مجاناً بالذكاء الاصطناعي</p>
+    <p class='en-v'>Free AI-powered tools for academic citations, legal analysis, SEO audit, OCR, and financial planning</p>
+</section>
+
+<!-- AdSense Top -->
+<div class='ad-banner'>
+    <ins class='adsbygoogle' style='display:block'
+         data-ad-client='ca-pub-6119422909390809'
+         data-ad-slot='AUTO' data-ad-format='auto'
+         data-full-width-responsive='true'/>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class='container'>
+<div class='tools-grid'>
+
+<!-- ① SEO -->
+<div class='tool-card' id='seo'>
+    <div class='card-icon'>🔍</div>
+    <h2 class='ar-v'>فاحص <span>السيو الذكي</span></h2>
+    <h2 class='en-v'>AI <span>SEO Content Audit</span></h2>
+    <textarea id='seoInput' rows='4'
+        placeholder='الصق نص مقالك أو محتوى صفحتك هنا... / Paste your article or page content...'/>
+    <button class='main-btn' onclick='runTool("seo")'>
+        <span class='spinner'/>
+        <span class='ar-v'>حلل بالذكاء الاصطناعي</span>
+        <span class='en-v'>Analyze with AI</span>
+    </button>
+    <div class='result-area' id='seoRes'/>
+    <div class='seo-text'>
+        <p class='en-v'>Free AI SEO Audit tool. Analyzes your content for keyword density, heading structure H1-H3, meta description quality, and Google ranking signals. Used by students and content creators worldwide.</p>
+        <p class='ar-v'>أداة فحص السيو المجانية بالذكاء الاصطناعي. تحليل شامل للكلمات المفتاحية وهيكل العناوين ووصف الميتا وإشارات تصدر جوجل. مستخدمة من طلاب وصانعي محتوى حول العالم.</p>
+    </div>
+</div>
+
+<!-- ② Legal -->
+<div class='tool-card' id='legal'>
+    <div class='card-icon'>⚖️</div>
+    <h2 class='ar-v'>ملخص <span>الوثائق القانونية</span></h2>
+    <h2 class='en-v'>AI <span>Legal Document Summarizer</span></h2>
+    <textarea id='legalInput' rows='5'
+        placeholder='الصق نص العقد أو الوثيقة القانونية... / Paste legal contract or document...'/>
+    <button class='main-btn' onclick='runTool("legal")'>
+        <span class='spinner'/>
+        <span class='ar-v'>لخّص بالذكاء الاصطناعي</span>
+        <span class='en-v'>Summarize with AI</span>
+    </button>
+    <div class='result-area' id='legalRes'/>
+    <div class='seo-text'>
+        <p class='en-v'>AI Legal Summarizer extracts key obligations, risk flags, and critical deadlines from contracts, lease agreements, and legal documents. For informational use only.</p>
+        <p class='ar-v'>أداة تلخيص العقود القانونية بالذكاء الاصطناعي. تستخرج الالتزامات الرئيسية والمخاطر والمواعيد المهمة من العقود والاتفاقيات. للأغراض المعلوماتية فقط.</p>
+    </div>
+</div>
+
+<!-- ③ Citation -->
+<div class='tool-card' id='cite'>
+    <div class='card-icon'>🎓</div>
+    <h2 class='ar-v'>مولد <span>التوثيق الأكاديمي</span></h2>
+    <h2 class='en-v'>APA MLA <span>Citation Generator</span></h2>
+    <input id='citeAuthor'    type='text'   placeholder='اسم المؤلف / Author Name'/>
+    <input id='citeTitle'     type='text'   placeholder='عنوان المصدر / Title'/>
+    <input id='citeYear'      type='text'   placeholder='سنة النشر / Year (e.g. 2024)'/>
+    <input id='citePublisher' type='text'   placeholder='الناشر / Publisher (optional)'/>
+    <select id='citeStyle'>
+        <option value='APA'>APA 7th Edition</option>
+        <option value='MLA'>MLA 9th Edition</option>
+        <option value='Chicago'>Chicago 17th Edition</option>
+    </select>
+    <button class='main-btn' onclick='runTool("cite")'>
+        <span class='spinner'/>
+        <span class='ar-v'>توليد المرجع</span>
+        <span class='en-v'>Generate Citation</span>
+    </button>
+    <div class='result-area' id='citeRes'/>
+    <div class='seo-text'>
+        <p class='en-v'>Free APA 7th Edition, MLA 9th Edition, and Chicago 17th Edition citation generator. Perfect for research papers, thesis, dissertations, and academic essays.</p>
+        <p class='ar-v'>مولد توثيق أكاديمي مجاني لصيغ APA و MLA و Chicago. مثالي لأبحاث الجامعة ورسائل الماجستير والدكتوراه والمقالات العلمية.</p>
+    </div>
+</div>
+
+<!-- ④ OCR -->
+<div class='tool-card' id='ocr'>
+    <div class='card-icon'>🖼️</div>
+    <h2 class='ar-v'>استخراج <span>النص من الصور</span></h2>
+    <h2 class='en-v'>OCR <span>Image to Text AI</span></h2>
+    <input accept='image/*' id='ocrFile' type='file' onchange='previewOCR(this)'/>
+    <div id='ocrPreview' style='display:none; margin:10px 0;'>
+        <img id='ocrImg' style='max-width:100%; max-height:180px; border-radius:8px; border:1px solid rgba(255,215,80,.2);'/>
+    </div>
+    <button class='main-btn' onclick='runTool("ocr")'>
+        <span class='spinner'/>
+        <span class='ar-v'>استخرج النص</span>
+        <span class='en-v'>Extract Text</span>
+    </button>
+    <div class='result-area' id='ocrRes'/>
+    <div class='seo-text'>
+        <p class='en-v'>Free AI OCR tool. Convert scanned images, photos, and screenshots to editable text. Supports Arabic and English text extraction with high accuracy.</p>
+        <p class='ar-v'>أداة استخراج النص من الصور مجاناً بالذكاء الاصطناعي. تحويل المستندات الممسوحة والصور إلى نصوص قابلة للتعديل. تدعم العربية والإنجليزية بدقة عالية.</p>
+    </div>
+</div>
+
+<!-- ⑤ Loan -->
+<div class='tool-card' id='loan'>
+    <div class='card-icon'>💰</div>
+    <h2 class='ar-v'>حاسبة <span>القروض الذكية</span></h2>
+    <h2 class='en-v'>AI <span>Loan Mortgage Calculator</span></h2>
+    <input id='loanAmt' type='number' placeholder='مبلغ القرض / Loan Amount ($)'/>
+    <input id='loanInt' type='number' placeholder='الفائدة السنوية % / Annual Interest Rate %'/>
+    <input id='loanYrs' type='number' placeholder='المدة بالسنوات / Term in Years'/>
+    <button class='main-btn' onclick='runTool("loan")'>
+        <span class='spinner'/>
+        <span class='ar-v'>احسب وحلل</span>
+        <span class='en-v'>Calculate + AI Advice</span>
+    </button>
+    <div class='result-area' id='loanRes'/>
+    <div class='seo-text'>
+        <p class='en-v'>Free AI Loan and Mortgage Calculator. Calculates monthly payments, total interest, and provides smart financial analysis to help you make better borrowing decisions.</p>
+        <p class='ar-v'>حاسبة قروض وتمويل مجانية بالذكاء الاصطناعي. تحسب الأقساط الشهرية وإجمالي الفوائد مع تحليل مالي ذكي لمساعدتك في اتخاذ قرارات أفضل.</p>
+    </div>
+</div>
+
+</div><!-- end tools-grid -->
+
+<!-- AdSense Bottom -->
+<div style='text-align:center; margin-top:40px;'>
+    <ins class='adsbygoogle' style='display:block'
+         data-ad-client='ca-pub-6119422909390809'
+         data-ad-slot='AUTO' data-ad-format='auto'
+         data-full-width-responsive='true'/>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+
+<footer>
+    <p>© 2026 <a href='/'>ProScholarTools</a> — Free AI Academic &amp; Research Tools</p>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     JavaScript — النظام الكامل
+     المفتاح محفوظ في Apps Script فقط — لا يظهر هنا أبداً
+════════════════════════════════════════════════════════ -->
+<script>
+// ─────────────────────────────────────────────────────
+// ⚙️ ضع رابط Apps Script الخاص بك هنا فقط
+// لا يحتوي على مفتاح API — المفتاح في السيرفر
+// ─────────────────────────────────────────────────────
+var PROXY_URL = 'YOUR_APPS_SCRIPT_WEB_APP_URL';
+
+// ─────────────────────────────────────────────────────
+// MEGA SYSTEM PROMPT — نظام برومبت واحد للـ 28 أداة
+// يتكيف تلقائياً مع كل أداة ولغة
+// ─────────────────────────────────────────────────────
+var MEGA_PROMPT = {
+
+  ar: function(tool, context) {
+    var base = 'أنت مساعد ذكاء اصطناعي خبير في منصة ProScholarTools — منصة الأدوات الأكاديمية والمهنية الرائدة.\n\n'
+      + 'هويتك الثابتة في كل رد:\n'
+      + '• خبير متخصص في مجال الأداة المطلوبة\n'
+      + '• تكتب باللغة العربية الفصحى الواضحة\n'
+      + '• ردودك منظمة ومرقمة وعملية\n'
+      + '• في نهاية كل رد: نصيحة قصيرة تشجع المستخدم على استخدام أداة أخرى في المنصة\n\n'
+      + 'معايير الجودة الثابتة:\n'
+      + '• الدقة العلمية فوق كل شيء\n'
+      + '• لا تختصر على حساب الجودة\n'
+      + '• اذكر تحفظات قانونية أو مالية عند الضرورة\n\n';
+
+    var toolGuides = {
+      seo:   'أنت محلل سيو خبير. حلل المحتوى وقدم:\n1. 📊 التقييم العام (X/100)\n2. ✅ نقاط القوة (3 نقاط)\n3. ⚠️ المشكلات المكتشفة مرتبة بالأولوية\n4. 🔧 أهم 3 إصلاحات فورية\n5. 🎯 الكلمات المفتاحية المقترحة للاستهداف\n6. 💡 نصيحة للتطوير المستمر',
+      legal: '⚠️ تنبيه: هذا التلخيص لأغراض معلوماتية فقط وليس استشارة قانونية.\n\nأنت محلل وثائق قانونية. قدم:\n1. 📋 نوع الوثيقة\n2. 🎯 أطراف العقد\n3. ✅ الالتزامات والحقوق الرئيسية\n4. 🔴 مخاطر أو بنود غير اعتيادية\n5. 📅 المواعيد والتواريخ المهمة\n6. 💡 التوصية التالية',
+      cite:  'أنت خبير توثيق أكاديمي. ولّد المرجع وقدم:\n1. 📚 المرجع الكامل بالصيغة المطلوبة\n2. 📝 الاقتباس داخل النص (In-text)\n3. ✅ قائمة التحقق: المسافة البادئة، الخط المائل، علامات الترقيم\n4. ⚠️ أي معلومات ناقصة\n5. 💡 نصيحة للمصادر المتعددة',
+      ocr:   'أنت محرك استخراج نصوص دقيق. استخرج:\n1. 📄 النص الكامل بالترتيب الصحيح\n2. 🌐 اللغة المكتشفة\n3. ✅ مستوى وضوح الصورة\n4. 💡 نصيحة لتحسين الجودة إن لزم',
+      loan:  'تنبيه: هذا تحليل إرشادي وليس استشارة مالية رسمية.\n\nأنت مستشار مالي. حلل القرض وقدم:\n1. 💰 القسط الشهري المحسوب\n2. 📊 إجمالي المبلغ المدفوع\n3. 💸 إجمالي الفوائد\n4. 📈 هل هذا القرض مناسب ماليًا؟\n5. ⚠️ مخاطر يجب الانتباه لها\n6. 💡 نصيحة مالية ذكية'
+    };
+
+    return base + (toolGuides[tool] || 'ساعد المستخدم بناءً على طلبه بأسلوب مهني واضح.');
+  },
+
+  en: function(tool, context) {
+    var base = 'You are an expert AI assistant on ProScholarTools — a leading academic and professional tools platform.\n\n'
+      + 'Your consistent identity in every response:\n'
+      + '• Domain expert specialized in the requested tool\n'
+      + '• Write in clear, professional English\n'
+      + '• Responses are structured, numbered, and actionable\n'
+      + '• End every response with a short tip encouraging use of another tool on the platform\n\n'
+      + 'Quality standards:\n'
+      + '• Scientific accuracy above all\n'
+      + '• Never sacrifice quality for brevity\n'
+      + '• Include legal or financial disclaimers when necessary\n\n';
+
+    var toolGuides = {
+      seo:   'You are an expert SEO analyst. Analyze the content and provide:\n1. 📊 Overall Score (X/100)\n2. ✅ Strengths (3 points)\n3. ⚠️ Issues Found (ranked by priority)\n4. 🔧 Top 3 immediate fixes\n5. 🎯 Suggested target keywords\n6. 💡 Continuous improvement tip',
+      legal: '⚠️ Disclaimer: For informational purposes only. Not legal advice.\n\nYou are a legal document analyst. Provide:\n1. 📋 Document Type\n2. 🎯 Parties Involved\n3. ✅ Key Obligations & Rights\n4. 🔴 Risk Flags & Unusual Clauses\n5. 📅 Important Dates & Deadlines\n6. 💡 Recommended Next Step',
+      cite:  'You are an academic citation expert. Generate the citation and provide:\n1. 📚 Full Citation in the requested style\n2. 📝 In-text Citation\n3. ✅ Formatting Checklist: hanging indent, italics, punctuation\n4. ⚠️ Missing information (if any)\n5. 💡 Tip for multiple sources',
+      ocr:   'You are a precise text extraction engine. Extract:\n1. 📄 Full text in correct reading order\n2. 🌐 Detected language\n3. ✅ Image clarity level\n4. 💡 Quality improvement tip if needed',
+      loan:  'Disclaimer: Advisory analysis only. Not official financial advice.\n\nYou are a financial advisor. Analyze and provide:\n1. 💰 Monthly Payment\n2. 📊 Total Amount Paid\n3. 💸 Total Interest Paid\n4. 📈 Is this loan financially sound?\n5. ⚠️ Risk warnings\n6. 💡 Smart financial tip'
+    };
+
+    return base + (toolGuides[tool] || 'Help the user based on their request in a professional and clear manner.');
+  }
+};
+
+// ─────────────────────────────────────────────────────
+// اللغة
+// ─────────────────────────────────────────────────────
+function toggleLang() {
+    var b = document.getElementById('mainBody');
+    var isAr = b.className === 'ar';
+    b.className = isAr ? 'en' : 'ar';
+    document.documentElement.lang = isAr ? 'en' : 'ar';
+}
+function getLang() {
+    return document.getElementById('mainBody').className === 'ar' ? 'ar' : 'en';
+}
+
+// ─────────────────────────────────────────────────────
+// OCR Preview
+// ─────────────────────────────────────────────────────
+function previewOCR(input) {
+    if (!input.files || !input.files[0]) return;
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        document.getElementById('ocrImg').src = e.target.result;
+        document.getElementById('ocrPreview').style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+}
+
+// ─────────────────────────────────────────────────────
+// استدعاء Proxy (المفتاح مخفي في Apps Script)
+// ─────────────────────────────────────────────────────
+function callProxy(tool, systemPrompt, userMessage, imageBase64, imageMime, callback) {
+    var payload = {
+        tool: tool,
+        systemPrompt: systemPrompt,
+        userMessage: userMessage
+    };
+    if (imageBase64) {
+        payload.imageBase64 = imageBase64;
+        payload.imageMime = imageMime;
+    }
+
+    fetch(PROXY_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        if (data.error) { callback(null, '❌ ' + data.error); return; }
+        callback(data.result, null);
+    })
+    .catch(function(err) {
+        callback(null, '❌ ' + (err.message || 'Network error'));
+    });
+}
+
+// ─────────────────────────────────────────────────────
+// تشغيل الأدوات
+// ─────────────────────────────────────────────────────
+function runTool(tool) {
+    var lang = getLang();
+    var btn   = document.querySelector('#' + tool + ' .main-btn');
+    var resEl = document.getElementById(tool + 'Res');
+
+    btn.classList.add('loading');
+    resEl.style.display = 'none';
+    resEl.className = 'result-area';
+
+    var sysPrompt = MEGA_PROMPT[lang](tool);
+    var userMsg   = '';
+    var imgBase64 = null, imgMime = null;
+
+    if (tool === 'seo') {
+        userMsg = document.getElementById('seoInput').value.trim();
+        if (!userMsg) { showError(btn, resEl, lang); return; }
+        userMsg = (lang === 'ar' ? 'حلل هذا المحتوى:\n' : 'Analyze this content:\n') + userMsg;
+    }
+    else if (tool === 'legal') {
+        userMsg = document.getElementById('legalInput').value.trim();
+        if (!userMsg) { showError(btn, resEl, lang); return; }
+        userMsg = (lang === 'ar' ? 'لخّص هذا النص القانوني:\n' : 'Summarize this legal text:\n') + userMsg;
+    }
+    else if (tool === 'cite') {
+        var auth  = document.getElementById('citeAuthor').value.trim();
+        var title = document.getElementById('citeTitle').value.trim();
+        var year  = document.getElementById('citeYear').value.trim();
+        var pub   = document.getElementById('citePublisher').value.trim();
+        var style = document.getElementById('citeStyle').value;
+        if (!auth || !title) { showError(btn, resEl, lang); return; }
+        userMsg = 'Generate a ' + style + ' citation.\nAuthor: ' + auth
+                + '\nTitle: ' + title
+                + '\nYear: ' + (year || 'n.d.')
+                + '\nPublisher: ' + (pub || 'N/A');
+    }
+    else if (tool === 'ocr') {
+        var file = document.getElementById('ocrFile').files[0];
+        if (!file) { showError(btn, resEl, lang); return; }
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            imgMime   = file.type;
+            imgBase64 = e.target.result.split(',')[1];
+            var msg   = lang === 'ar' ? 'استخرج كل النص من هذه الصورة.' : 'Extract all text from this image.';
+            callProxy('ocr', sysPrompt, msg, imgBase64, imgMime, function(res, err) {
+                btn.classList.remove('loading');
+                showResult(resEl, res, err);
+            });
+        };
+        reader.readAsDataURL(file);
+        return;
+    }
+    else if (tool === 'loan') {
+        var amt  = parseFloat(document.getElementById('loanAmt').value) || 0;
+        var rate = parseFloat(document.getElementById('loanInt').value) || 0;
+        var yrs  = parseFloat(document.getElementById('loanYrs').value) || 20;
+        if (!amt || !rate) { showError(btn, resEl, lang); return; }
+        var r       = rate / 100 / 12;
+        var n       = yrs * 12;
+        var monthly = r > 0 ? (amt * r) / (1 - Math.pow(1 + r, -n)) : amt / n;
+        var total   = monthly * n;
+        var interest = total - amt;
+        userMsg = 'Loan Data:\n- Amount: $' + amt.toFixed(2)
+                + '\n- Annual Interest: ' + rate + '%'
+                + '\n- Term: ' + yrs + ' years'
+                + '\n- Monthly Payment: $' + monthly.toFixed(2)
+                + '\n- Total Payment: $' + total.toFixed(2)
+                + '\n- Total Interest: $' + interest.toFixed(2)
+                + '\n\n' + (lang === 'ar' ? 'قدم التحليل المالي الكامل.' : 'Provide full financial analysis.');
+    }
+
+    callProxy(tool, sysPrompt, userMsg, null, null, function(res, err) {
+        btn.classList.remove('loading');
+        showResult(resEl, res, err);
+    });
+}
+
+function showResult(el, res, err) {
+    el.style.display = 'block';
+    if (err) { el.classList.add('error'); el.textContent = err; }
+    else { el.textContent = res; }
+}
+function showError(btn, el, lang) {
+    btn.classList.remove('loading');
+    el.style.display = 'block';
+    el.classList.add('error');
+    el.textContent = lang === 'ar'
+        ? '⚠️ الرجاء ملء الحقول المطلوبة أولاً.'
+        : '⚠️ Please fill in the required fields first.';
+}
+</script>
+
+<b:section id='main' showaddelement='false'/>
+</body>
+</html>

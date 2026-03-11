@@ -1,0 +1,24 @@
+{
+  "name": "new-pro",
+  "version": "1.0.0",
+  "description": "22 free AI tools for academic citations, IRAC legal briefs, and PhD research",
+  "scripts": {
+    "build": "echo 'Static HTML site - no build needed'",
+    "dev": "echo 'Use a local server to preview. Vercel Analytics requires deployment to Vercel.'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rogaareef/New-pro"
+  },
+  "keywords": [
+    "vercel",
+    "analytics",
+    "academic-tools",
+    "citation-generator"
+  ],
+  "author": "ProScholarTools",
+  "license": "MIT"
+}

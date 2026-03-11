@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://proscholartools.com/sitemap.xml
+Disallow: /.netlify/
